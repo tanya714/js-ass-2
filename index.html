@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="Q1.js" language="javascript"></script>
+    <script src="Q3.js" language="javascript"></script>
+    <script src="Q41.js" language="javascript"></script>
+    <script src="Q42.js" language="javascript"></script>
+    <script src="Q5.js" language="javascript"></script>
+    <script src="Q6.js" language="javascript"></script>
+    <script src="Q8.js" language="javascript"></script>
+    <script src="Q9.js" language="javascript"></script>
+    <script src="Q10.js" language="javascript"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form action="" name="c" class="function">
+        <div class="keypad">
+            <br>
+            <input type="text" name="v" class="value"><br>
+            <div class="grid">
+                <div class="num" onclick="document.c.v.value = ''">C</div> <br>
+                <div class="num" onclick="document.c.v.value += '/'">/</div> <br>
+                <div class="num" onclick="document.c.v.value += '*'">*</div> <br>
+            </div>
+            <div class="grid1">
+                <div class="num1" onclick="document.c.v.value += '+'">+</div> <br>
+                <div class="num1" onclick="document.c.v.value += '-'">-</div> <br>
+            </div>
+            <div class="grid">
+                <div class="num" onclick="document.c.v.value += '7'">7</div> <br>
+                <div class="num" onclick="document.c.v.value += '8'">8</div> <br>
+                <div class="num" onclick="document.c.v.value += '9'">9</div> <br>
+            </div>
+            <div class="grid">
+                <div class="num" onclick="document.c.v.value += '4'">4</div> <br>
+                <div class="num" onclick="document.c.v.value += '5'">5</div> <br>
+                <div class="num" onclick="document.c.v.value += '6'">6</div> <br>
+            </div>
+            <div class="grid">
+                <div class="num" onclick="document.c.v.value += '1'">1</div> <br>
+                <div class="num" onclick="document.c.v.value += '2'">2</div> <br>
+                <div class="num" onclick="document.c.v.value += '3'">3</div> <br>
+            </div>
+            <div class="grid">
+                <div class="num" onclick="document.c.v.value += ' '"> </div> <br>
+                <div class="num" onclick="document.c.v.value += '0'">0</div> <br>
+                <div class="num" onclick="document.c.v.value += '.'">.</div> <br>
+            </div>
+        </div>
+        <br>
+        <div class="fun">
+            <div class="hi">
+                <div class="add" onclick="document.c.v.value = eval(c.v.value)">Evaluate</div> <br>
+                <div class="add" onclick="document.c.v.value = double(eval(c.v.value))">Double the number</div> <br>
+            </div>
+            <div class="hi">
+                <div class="add" onclick="document.c.v.value = fib(c.v.value)">Calculate Fibonacci series upto n terms</div> <br>
+                <div class="add" onclick="document.c.v.value = greatest(c.v.value)">Find the greatest of the three given numbers</div> <br>
+            </div>
+            <div class="hi">
+                <div class="add" onclick="document.c.v.value = text(c.v.value)">To check whether the given text is a valid number or not</div> <br>
+                <div class="add" onclick="document.c.v.value = check(c.v.value)">To check whether the given number is +ve, 0 or -ve</div> <br>
+            </div>
+            <div class="hi">
+                <div class="add" onclick="document.c.v.value = square(c.v.value)">Display the square of a number</div> <br>
+                <div class="add" onclick="document.c.v.value = cube(c.v.value)">Display the cube of a number</div> <br>
+            </div>
+            <div class="hi">
+                <div class="add" onclick="document.c.v.value = div3(c.v.value)">Display all numbers divisible by 3 in a range</div> <br>
+                <div class="add" onclick="document.c.v.value = notdiv3(c.v.value)">Display all numbers not divisible by 3 in a range</div> <br>
+            </div>
+        </div>
+    </form>
+    </div>
+</body>
+
+</html>
