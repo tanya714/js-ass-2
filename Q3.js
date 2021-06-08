@@ -1,9 +1,15 @@
 //js code to calculate fibonacci series upto n terms
-function fib() {
-    number[0] = 0;
-    number[1] = 1;
-    for (var i = 2; i <= n; i++) {
-        number[i] = number[i - 2] + number[i - 1];
+function fibonacci(nums) {
+
+    let fib = [0, 1];
+    let data = [];
+    data.push(fib[0]);
+    data.push(fib[1]);
+    for (let i = 2; i < nums; i++) {
+        fib[i] = fib[i - 1] + fib[i - 2];
+
+        data.push(fib[i]);
     }
-    return number[i];
-}\\\\\
+
+    return data;
+}
