@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Week-4</title>
     <script src="Q1.js" language="javascript"></script>
+    <script src="Q2.js" language="javascript"></script>
     <script src="Q3.js" language="javascript"></script>
     <script src="Q41.js" language="javascript"></script>
     <script src="Q42.js" language="javascript"></script>
@@ -19,60 +20,73 @@
 </head>
 
 <body>
-    <form action="" name="c" class="function">
-        <div class="keypad">
+    <div class="container">
+        <form action="" name="c" class="function">
+            <div class="keypad">
+                <br>
+                <input type="text" name="v" class="value"><br>
+                <div class="grid">
+                    <div class="num" id="num" onclick="document.c.v.value = ''">C</div> <br>
+                    <div class="num" id="num1" onclick="document.c.v.value += '/'">/</div> <br>
+                    <div class="num" id="num2" onclick="document.c.v.value += '*'">*</div> <br>
+                </div>
+                <div class="grid1">
+                    <div class="num1" id="num3" onclick="document.c.v.value += '+'">+</div> <br>
+                    <div class="num1" id="num4" onclick="document.c.v.value += '-'">-</div> <br>
+                </div>
+                <div class="grid">
+                    <div class="num" id="num5" onclick="document.c.v.value += '7'">7</div> <br>
+                    <div class="num" id="num6" onclick="document.c.v.value += '8'">8</div> <br>
+                    <div class="num" id="num7" onclick="document.c.v.value += '9'">9</div> <br>
+                </div>
+                <div class="grid">
+                    <div class="num" id="num8" onclick="document.c.v.value += '4'">4</div> <br>
+                    <div class="num" id="num9" onclick="document.c.v.value += '5'">5</div> <br>
+                    <div class="num" id="num0" onclick="document.c.v.value += '6'">6</div> <br>
+                </div>
+                <div class="grid">
+                    <div class="num" id="num11" onclick="document.c.v.value += '1'">1</div> <br>
+                    <div class="num" id="num22" onclick="document.c.v.value += '2'">2</div> <br>
+                    <div class="num" id="num33" onclick="document.c.v.value += '3'">3</div> <br>
+                </div>
+                <div class="grid">
+                    <div class="num" id="num44" onclick="document.c.v.value += ' '"> </div> <br>
+                    <div class="num" id="num55" onclick="document.c.v.value += '0'">0</div> <br>
+                    <div class="num" id="num66" onclick="document.c.v.value += '.'">.</div> <br>
+                </div>
+            </div>
             <br>
-            <input type="text" name="v" class="value"><br>
-            <div class="grid">
-                <div class="num" onclick="document.c.v.value = ''">C</div> <br>
-                <div class="num" onclick="document.c.v.value += '/'">/</div> <br>
-                <div class="num" onclick="document.c.v.value += '*'">*</div> <br>
+            <div class="fun">
+                <div class="hi">
+                    <div class="add" id="add1" onclick="document.c.v.value = eval(c.v.value)">Evaluate</div> <br>
+                    <div class="add" id="add2" onclick="document.c.v.value = double(eval(c.v.value))">Double the number</div> <br>
+                </div>
+                <div class="hi">
+                    <div class="add" id="add3" onclick="document.c.v.value = fibonacci(eval(c.v.value))">Calculate Fibonacci series upto n terms</div> <br>
+                    <div class="add" id="add4" onclick="document.c.v.value = greatest(c.v.value)">Find the greatest of the three given numbers</div> <br>
+                </div>
+                <div class="hi">
+                    <div class="add" id="add5" onclick="document.c.v.value = text(c.v.value)">To check whether the given text is a valid number or not</div> <br>
+                    <div class="add" id="add6" onclick="document.c.v.value = check(c.v.value)">To check whether the given number is +ve, 0 or -ve</div> <br>
+                </div>
+                <div class="hi">
+                    <div class="add" id="add7" onclick="document.c.v.value = square(c.v.value)">Display the square of a number</div> <br>
+                    <div class="add" id="add8" onclick="document.c.v.value = cube(c.v.value)">Display the cube of a number</div> <br>
+                </div>
             </div>
-            <div class="grid1">
-                <div class="num1" onclick="document.c.v.value += '+'">+</div> <br>
-                <div class="num1" onclick="document.c.v.value += '-'">-</div> <br>
-            </div>
-            <div class="grid">
-                <div class="num" onclick="document.c.v.value += '7'">7</div> <br>
-                <div class="num" onclick="document.c.v.value += '8'">8</div> <br>
-                <div class="num" onclick="document.c.v.value += '9'">9</div> <br>
-            </div>
-            <div class="grid">
-                <div class="num" onclick="document.c.v.value += '4'">4</div> <br>
-                <div class="num" onclick="document.c.v.value += '5'">5</div> <br>
-                <div class="num" onclick="document.c.v.value += '6'">6</div> <br>
-            </div>
-            <div class="grid">
-                <div class="num" onclick="document.c.v.value += '1'">1</div> <br>
-                <div class="num" onclick="document.c.v.value += '2'">2</div> <br>
-                <div class="num" onclick="document.c.v.value += '3'">3</div> <br>
-            </div>
-            <div class="grid">
-                <div class="num" onclick="document.c.v.value += ' '"> </div> <br>
-                <div class="num" onclick="document.c.v.value += '0'">0</div> <br>
-                <div class="num" onclick="document.c.v.value += '.'">.</div> <br>
-            </div>
-        </div>
-        <br>
-        <div class="fun">
-            <div class="hi">
-                <div class="add" onclick="document.c.v.value = eval(c.v.value)">Evaluate</div> <br>
-                <div class="add" onclick="document.c.v.value = double(eval(c.v.value))">Double the number</div> <br>
-            </div>
-            <div class="hi">
-                <div class="add" id="fib" onclick="document.c.v.value = fibonacci(eval(c.v.value))">Calculate Fibonacci series upto n terms</div> <br>
-                <div class="add" onclick="document.c.v.value = greatest(c.v.value)">Find the greatest of the three given numbers</div> <br>
-            </div>
-            <div class="hi">
-                <div class="add" onclick="document.c.v.value = text(c.v.value)">To check whether the given text is a valid number or not</div> <br>
-                <div class="add" onclick="document.c.v.value = check(c.v.value)">To check whether the given number is +ve, 0 or -ve</div> <br>
-            </div>
-            <div class="hi">
-                <div class="add" onclick="document.c.v.value = square(c.v.value)">Display the square of a number</div> <br>
-                <div class="add" onclick="document.c.v.value = cube(c.v.value)">Display the cube of a number</div> <br>
+        </form>
+        <div class="sec" id="sec">
+            <form action="" name="c1" class="function">
+                <input type="text" name="v1" class="value1"><br>
+                <div class="add" onclick="document.c1.v1.value = new Date(c1.v1.value)" id="add9">Check whether it's a weekday or a weekend on a date </div> <br>
+            </form>
+            <div class="hr" id="hr"></div>
+            <div class="add" onclick="rollover()" id="add0">Change the Theme</div> <br>
+            <div class="a">
+                <div class="add1" id="add10" onmouseover="mousepoint()" onmouseout="mousepoint1()" style="width: max-content; cursor: pointer;">Point on Me!</div> <br>
+                <img src="icons8-javascript-128.png" style="visibility: hidden;">
             </div>
         </div>
-    </form>
     </div>
 </body>
 
