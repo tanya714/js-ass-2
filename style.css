@@ -6,8 +6,8 @@ body {
     align-content: center;
     border: 2px black solid;
     text-align: center;
-    padding: 30px;
-    width: 50px;
+    padding: 20px;
+    width: 25px;
     border-radius: 10px;
     background-color: rgb(201, 201, 82);
     cursor: pointer;
@@ -18,8 +18,8 @@ body {
     align-content: center;
     border: 2px black solid;
     text-align: center;
-    padding: 30px;
-    width: 107px;
+    padding: 20px;
+    width: 60px;
     border-radius: 10px;
     background-color: rgb(201, 201, 82);
     cursor: pointer;
@@ -43,13 +43,13 @@ body {
 }
 
 .function {
-    margin-left: 160px;
+    margin-left: 80px;
     margin-top: 100px;
     display: flex;
 }
 
 .value {
-    width: 310px;
+    width: 170px;
     height: 50px;
     margin-bottom: 10px;
     border-radius: 10px;
@@ -58,15 +58,26 @@ body {
     padding-right: 15px;
 }
 
+.value1 {
+    width: 160px;
+    height: 50px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
 .add {
-    margin-left: 100px;
+    margin-left: 70px;
     margin-top: 20px;
     color: white;
     align-content: center;
     border: 2px black solid;
     text-align: center;
-    padding: 31px;
-    width: 250px;
+    padding: 25px;
+    width: 150px;
     border-radius: 10px;
     background-color: rgb(139, 34, 34);
     cursor: pointer;
@@ -79,4 +90,48 @@ body {
 
 .hi {
     display: flex;
+}
+
+.sec {
+    border-left: 4px white solid;
+    height: 600px;
+    margin-left: 50px;
+    margin-top: 50px;
+    border-radius: 1%;
+}
+
+.container {
+    display: flex;
+}
+
+.hr {
+    border-top: 4px white solid;
+    width: 500px;
+    margin-top: 100px;
+    margin-left: 50px;
+}
+
+.a {
+    display: flex;
+}
+
+img {
+    margin-top: 10px;
+    margin-left: 100px;
+}
+
+.add1 {
+    margin-left: 70px;
+    margin-top: 20px;
+    color: white;
+    align-content: center;
+    border: 2px black solid;
+    text-align: center;
+    padding: 20px;
+    width: 150px;
+    border-radius: 10px;
+    background-color: rgb(139, 34, 34);
+    cursor: pointer;
+    font-size: 18px;
+    height: 20px;
 }
